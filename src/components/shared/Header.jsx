@@ -48,7 +48,9 @@ export default function Header() {
           <button className="text-3xl text-indigo-600 font-bold w-2/4">
             <FaUser />
           </button>
-          <button className="text-4xl text-indigo-600 font-bold w-2/4">
+          <button
+            className="text-4xl text-indigo-600 font-bold w-2/4"
+          >
             <IoCartOutline />
           </button>
 

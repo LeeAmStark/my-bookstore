@@ -13,17 +13,18 @@ import Cart from "./components/shared/Cart";
 function App() {
   return (
     <Router>
-      <Cart/>
-      <Header/>
-      <Routes>
-      <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Signup />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer/>
+        <Cart />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Signup />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Cart />} />
+        </Routes>
+        <Footer />
     </Router>
   );
 }
