@@ -14,10 +14,10 @@ export default function Contact() {
         className="border w-2/6 rounded-full shadow-md font-semibold ml-10 pl-8 p-3 justify-center items-center"
       />
 
-      <div className="w-full h-[300px] flex justify-items-center">
-        <div className="w-3/5 flex m-auto">
-          <div className="bg-sky-300 w-5/12 flex flex-col gap-6 h-[300px] justify-center p-8">
-            <h2 className="text-2xl font-semibold">
+      <div className="w-full h-[300px] flex items-center content-center">
+        <div className="w-4/5 m-auto flex">
+          <div className="bg-sky-300 flex flex-col gap-6 h-[300px] justify-center p-8">
+            <h2 className="w-2/4 text-2xl font-semibold">
               Get personalized help and see your recent orders
             </h2>
             <button className="bg-indigo-500 w-2/4 h-[50px] text-xl font-bold text-white">
@@ -81,7 +81,7 @@ export default function Contact() {
       </div>
 
       <div>
-        <h1 className="text-3xl font-bold pl-14 p-6">Browse Help Articles</h1>
+        <h1 className="text-2xl font-bold pl-14 p-6">Browse Help Articles</h1>
         <div className="container mx-auto p-4">
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             <div className="flex flex-col items-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-md">
@@ -133,6 +133,41 @@ export default function Contact() {
               <p className="text-lg font-bold">Fees and billing</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="border border-gray-700 bg-gray-100 w-1/4 h-[450px] m-auto flex flex-col items-center">
+        <h2 className="p-6 text-2xl font-bold ">Specific Information</h2>
+        <div className="w-full">
+          <form action="" className="flex flex-col gap-6 items-center">
+            <input
+              className="border border-gray-600 w-10/12 text-lg rounded-sm h-[50px] p-3"
+              type="text"
+              placeholder="Enter your name"
+              id=""
+            />
+            <input
+              className="border border-gray-600 w-10/12 text-lg rounded-sm h-[50px] p-3"
+              type="email"
+              placeholder="Enter your email"
+              id=""
+            />
+            <input
+              className="border border-gray-600 w-10/12 text-lg rounded-sm h-[50px] p-3"
+              type="number"
+              placeholder="Enter your number"
+              id=""
+            />
+            <textarea
+              className="border border-gray-600 w-10/12 text-lg rounded-sm pt-3 pl-3"
+              name=""
+              placeholder="Enter your specific message"
+              id=""
+            ></textarea>
+            <button type="Submit" className="w-56 h-10 text-white rounded bg-indigo-600 text-xl font-bold">
+              Send Message
+            </button>{" "}
+          </form>
         </div>
       </div>
     </div>

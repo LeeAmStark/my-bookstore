@@ -9,11 +9,11 @@ import Shop from "./components/Shop";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Cart from "./components/shared/Cart";
+import Order from "./components/Order";
 
 function App() {
   return (
     <Router>
-        <Cart />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,7 +22,8 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/contact" element={<Cart />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<Order />} />
         </Routes>
         <Footer />
     </Router>

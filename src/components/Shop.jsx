@@ -69,10 +69,10 @@ export default function Shop() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={AH_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">
+            <h4 className="text-lg mt-2 font-semibold">
               A Court of Thorns and Roses
             </h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <a href="" className="mt-1 text-gray-500">
               By: Sarah J. Maas
             </a>
             <p className="font-bold text-md">$50</p>
@@ -83,8 +83,8 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={FT_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">Fairy Tale</h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <h4 className="text-lg mt-2 font-semibold">Fairy Tale</h4>
+            <a href="" className="mt-1 text-gray-500">
               By: Stephen King
             </a>
             <p className="font-bold text-md">$50</p>
@@ -95,7 +95,7 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={GoT_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">The Game of Thrones</h4>
+            <h4 className="text-lg mt-2 font-semibold">The Game of Thrones</h4>
             <a href="" className="text-lg mt-1 text-gray-500">
               By: George R.T Maas
             </a>
@@ -107,10 +107,10 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={HP_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">
+            <h4 className="text-lg mt-2 font-semibold">
               Harry Potter and The Philosopher's ...
             </h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <a href="" className="text-sm mt-1 text-gray-500">
               By: J.K Rowling
             </a>
             <p className="font-bold text-md">$50</p>
@@ -121,10 +121,10 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={TLOR_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">
+            <h4 className="text-lg mt-2 font-semibold">
               The Lord of The Rings
             </h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <a href="" className="mt-1 text-gray-500">
               By: Andy Serkis
             </a>
             <p className="font-bold text-md">$50</p>
@@ -135,8 +135,8 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={MSF_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">Mythos: Greek Retold</h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <h4 className="text-lg mt-2 font-semibold">Mythos: Greek Retold</h4>
+            <a href="" className="text-sm mt-1 text-gray-500">
               By: Stephen Fry
             </a>
             <p className="font-bold text-md">$50</p>
@@ -147,10 +147,10 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={TMC_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">
+            <h4 className="text-lg mt-2 font-semibold">
               The Thursday Murder Club
             </h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <a href="" className="text-sm mt-1 text-gray-500">
               By: Richard Osman
             </a>
             <p className="font-bold text-md">$50</p>
@@ -161,8 +161,8 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={TPH_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">The Primal Hunter</h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <h4 className="text-lg mt-2 font-semibold">The Primal Hunter</h4>
+            <a href="" className="mt-1 text-gray-500">
               By: Zogarth
             </a>
             <p className="font-bold text-md">$50</p>
@@ -173,8 +173,8 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={TS_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">The Suspect</h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <h4 className="text-lg mt-2 font-semibold">The Suspect</h4>
+            <a href="" className="text-sm mt-1 text-gray-500">
               By: Rob Rinder
             </a>
             <p className="font-bold text-md">$50</p>
@@ -185,8 +185,8 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={TSC_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">The Satsuma Complex</h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <h4 className="text-lg mt-2 font-semibold">The Satsuma Complex</h4>
+            <a href="" className="mt-1 text-gray-500">
               By: Bob Mortimer
             </a>
             <p className="font-bold text-md">$50</p>
@@ -197,8 +197,8 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={U_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">Unruly</h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <h4 className="text-lg mt-2 font-semibold">Unruly</h4>
+            <a href="" className="mt-1 text-gray-500">
               By: David Mitchell
             </a>
             <p className="font-bold text-md">$50</p>
@@ -209,10 +209,10 @@ export default function Shop() {
 
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
             <img className="rounded-full" src={UPP_img} alt="" width="85%" />
-            <h4 className="text-xl mt-2 font-semibold">
+            <h4 className="text-lg mt-2 font-semibold">
               The Ultra Processed People
             </h4>
-            <a href="" className="text-lg mt-1 text-gray-500">
+            <a href="" className="mt-1 text-gray-500">
               By: Chris Van Tulleken
             </a>
             <p className="font-bold text-md">$50</p>
@@ -227,8 +227,7 @@ export default function Shop() {
         <div className="flex p-4 space-x-96 border shadow-md rounded-xl items-center w-full max-w-4xl h-[200px] m-auto">
           <div className="flex flex-col gap-1 w-3/12">
             <h2 className="text-2xl font-bold text-indigo-600">Bookly.</h2>
-            <h2>Deals made easy all year long. Free Shipping. Best Prices</h2>
-            <h2></h2>
+            <h2 className="">Deals made easy all year long. Free Shipping. Best Prices</h2>
             <button className="w-1/2 bg-red-500 rounded text-white py-1">Find More</button>
           </div>
 

@@ -1,4 +1,5 @@
 import Header from "./shared/Header";
+import Cart from "./shared/Cart";
 
 //Images
 //Misc Image
@@ -30,86 +31,86 @@ export default function Home() {
             nostrum omnis molestias ullam exercitationem libero fugit deleniti
             repudiandae voluptatem tenetur?
           </p>
-          <button className="text-2xl bg-indigo-600 w-64 p-3">
+          <button className="text-xl bg-indigo-600 w-48 rounded p-3">
             Discover More
           </button>
         </div>
       </div>
 
-      <div className="flex-col content-center text-center justify-center">
-        <h1 className="text-4xl font-bold">LATEST PRODUCTS</h1>
+      <div className="flex-col content-center text-center justify-center pt-4">
+        <h1 className="text-2xl font-bold">LATEST PRODUCTS</h1>
       </div>
 
-      <div className="container mx-auto p-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div className="border border-gray-600 p-4 rounded-lg bg-indigo-300">
+      <div className="w-full p-4">
+        <div className="w-2/4 m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="border border-gray-200 p-4 rounded-lg shadow-md">
             <img src={TWAA_img} alt="" width="100%" />
             <h4 className="text-xl">The World of Abstract Art</h4>
             <div className="flex ">
               <p className="font-bold text-2xl">$50</p>
               <input type="number" className="w-10 ml-6 mb-3 text-xl rounded" />
             </div>
-            <button className="w-40 bg-red-500 text-xl rounded">
+            <button className="w-4/6 bg-red-500 text-xl rounded">
               Add To Cart
             </button>
           </div>
 
-          <div className="border border-gray-600 p-4 rounded-lg bg-indigo-300">
+          <div className="border border-gray-200 p-4 rounded-lg shadow-md">
             <img src={THL_img} alt="" width="100%" />
             <h4 className="text-xl">The Happy Lemon</h4>
             <div className="flex">
-              <p className="font-bold text-2xl">$50</p>
+              <p className="font-bold text-xl">$50</p>
               <input type="number" className="w-10 ml-6 mb-3 text-xl rounded" />
             </div>
-            <button className="w-40 bg-red-500 text-xl rounded">
+            <button className="w-4/6 bg-red-500 text-xl rounded">
               Add To Cart
             </button>
           </div>
 
-          <div className="border border-gray-600 p-4 rounded-lg bg-indigo-300">
+          <div className="border border-gray-200 p-4 rounded-lg shadow-md">
             <img src={RG_img} alt="" width="100%" />
             <h4 className="text-xl">Radical Gardening</h4>
             <div className="flex ">
-              <p className="font-bold text-2xl">$50</p>
+              <p className="font-bold text-xl">$50</p>
               <input type="number" className="w-10 ml-6 mb-3 text-xl rounded" />
             </div>
-            <button className="w-40 bg-red-500 text-xl rounded">
+            <button className="w-4/6 bg-red-500 text-xl rounded">
               Add To Cart
             </button>
           </div>
 
-          <div className="border border-gray-600 p-4 rounded-lg bg-indigo-300">
+          <div className="border border-gray-200 p-4 rounded-lg shadow-md">
             <img src={S_img} alt="" width="100%" />
             <h4 className="text-xl">Shattered</h4>
             <div className="flex ">
-              <p className="font-bold text-2xl">$50</p>
+              <p className="font-bold text-xl">$50</p>
               <input type="number" className="w-10 ml-6 mb-3 text-xl rounded" />
             </div>
-            <button className="w-40 bg-red-500 text-xl rounded">
+            <button className="w-4/6 bg-red-500 text-xl rounded">
               Add To Cart
             </button>
           </div>
   
-          <div className="border border-gray-600 p-4 rounded-lg bg-indigo-300">
+          <div className="border border-gray-200 p-4 rounded-lg shadow-md">
             <img src={TGIS_img} alt="" width="100%" />
             <h4 className="text-xl">The Girl of Ink & Stars</h4>
             <div className="flex ">
-              <p className="font-bold text-2xl">$50</p>
+              <p className="font-bold text-xl">$50</p>
               <input type="number" className="w-10 ml-6 mb-3 text-xl rounded" />
             </div>
-            <button className="w-40 bg-red-500 text-xl rounded">
+            <button className="w-4/6 bg-red-500 text-xl rounded">
               Add To Cart
             </button>
           </div>
 
-          <div className="border border-gray-600 p-4 rounded-lg bg-indigo-300">
+          <div className="border border-gray-200 p-4 rounded-lg shadow-md">
             <img src={NS_img} alt="" width="100%" />
             <h4 className="text-xl">Nightshade</h4>
             <div className="flex ">
-              <p className="font-bold text-2xl">$50</p>
+              <p className="font-bold text-xl">$50</p>
               <input type="number" className="w-10 ml-6 mb-3 text-xl rounded" />
             </div>
-            <button className="w-40 bg-red-500 text-xl rounded">
+            <button className="w-4/6 bg-red-500 text-xl rounded">
               Add To Cart
             </button>
           </div>
@@ -117,7 +118,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center self-center">
-        <button className="w-6/12 h-4/6 border-4 rounded border-red-500 text-2xl font-bold">
+        <button className="w-[45%] h-4/6 border-4 rounded border-red-500 text-2xl font-bold">
           LOAD MORE
         </button>
       </div>
@@ -133,7 +134,7 @@ export default function Home() {
             fugiat! Beatae, laudantium harum doloribus delectus itaque
             necessitatibus suscipit odit.
           </p>
-          <button className="w-2/5 border-4 rounded border-red-500 text-2xl font-bold">
+          <button className="w-2/4 border-4 rounded border-red-500 text-2xl font-bold">
             READ MORE
           </button>
         </div>

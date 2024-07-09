@@ -1,14 +1,8 @@
-import Header from "./Header";
-
 export default function Cart() {
   const price = 50;
   const totalPrice = price;
   return (
-    <div
-      className={`fixed h-screen 
-        cartHidden right-[0%]
-      } top-0 bg-gray-200 p-5 w-3/12 flex flex-col gap-6`}
-    >
+    <div className={"bg-gray-200 p-5 w-2/4 flex flex-col gap-6 m-auto"}>
       <h2 className="text-3xl font-bold pt-10">Cart</h2>
       <hr />
       <div className="flex-col space-y-4 p-4">

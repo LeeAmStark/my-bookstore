@@ -17,7 +17,7 @@ export default function Footer() {
             eum dicta eaque facilis nulla reiciendis blanditiis inventore ipsam
             expedita laudantium!
           </p>
-          <button className="w-56 h-12 rounded bg-indigo-600 text-2xl font-bold">
+          <button className="w-56 h-10 rounded bg-indigo-600 text-2xl font-bold">
             Contact Us
           </button>
         </div>
