@@ -26,7 +26,7 @@ export default function Header() {
           </div>
         </div>
         <div className="flex w-full fixed space-x-24 justify-center items-center bg-gray-300 h-14">
-          <h2 className="text-2xl font-bold text-indigo-600">
+          <h2 className="text-2xl font-bold hover:text-indigo-600">
             <a href="/">Bookly.</a>
           </h2>
           <nav>
@@ -62,10 +62,10 @@ export default function Header() {
                 <IoSearchSharp />
               </div>
             </div>
-            <button className="text-3xl text-indigo-600 font-bold w-2/4">
+            <button className="text-3xl hover:text-indigo-600 font-bold w-2/4">
               <FaUser />
             </button>
-            <a href="/cart" className="text-4xl text-indigo-600 font-bold w-2/4">
+            <a href="/cart" className="text-4xl hover:text-indigo-600 font-bold w-2/4">
               <IoCartOutline />
             </a>
           </div>
