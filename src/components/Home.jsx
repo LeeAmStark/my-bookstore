@@ -1,3 +1,5 @@
+import React from "react";
+
 import Header from "./shared/Header";
 import Cart from "./shared/Cart";
 
@@ -14,10 +16,10 @@ import S_img from "./images/books-img/shattered.jpg";
 import TGIS_img from "./images/books-img/the_girl_of_ink_and_stars.jpg";
 import NS_img from "./images/books-img/nightshade.jpg";
 
-
 export default function Home() {
   return (
     <>
+      console.log(Location.state.id)
       <div
         className="flex items-center justify-center w-vw h-[500px] bg-center bg-cover"
         style={{ backgroundImage: `url(${homeBG})` }}
@@ -36,11 +38,9 @@ export default function Home() {
           </button>
         </div>
       </div>
-
       <div className="flex-col content-center text-center justify-center pt-4">
         <h1 className="text-2xl font-bold">LATEST PRODUCTS</h1>
       </div>
-
       <div className="w-full p-4">
         <div className="w-2/4 m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div className="border border-gray-200 p-4 rounded-lg shadow-md">
@@ -90,7 +90,7 @@ export default function Home() {
               Add To Cart
             </button>
           </div>
-  
+
           <div className="border border-gray-200 p-4 rounded-lg shadow-md">
             <img src={TGIS_img} alt="" width="100%" />
             <h4 className="text-xl">The Girl of Ink & Stars</h4>
@@ -116,16 +116,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="flex justify-center self-center">
         <button className="w-[45%] h-4/6 border-4 rounded border-red-500 text-2xl font-bold">
           LOAD MORE
         </button>
       </div>
-
       <div className="flex mt-14 justify-center">
         <div className="space-y-8 shadow-md">
-          <img src={aboutBG} alt=""/>
+          <img src={aboutBG} alt="" />
         </div>
         <div className="rounded bg-gray-200 flex-col space-y-4 w-1/3 h-80 content-center self-center shadow-md p-4">
           <h2 className="text-3xl font-bold ">ABOUT US</h2>
