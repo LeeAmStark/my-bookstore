@@ -1,7 +1,7 @@
-require('dotenv').config();
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+import axios from "axios"; // Making use of axios to connect the front end to the back end to make requests - 
+// Make sure this is installed on all your components you intend to link to the back-end 
+import React from "react"; 
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
@@ -13,21 +13,7 @@ import About from "./components/About";
 import Cart from "./components/shared/Cart";
 import Order from "./components/Order";
 
-const apiUrl = process.env.REACT_APP_URL;
-
 const App = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`${apiUrl}/api/data`)
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.error("There was an error making the request!", error);
-      });
-  }, []);
 
   return (
     <Router>
