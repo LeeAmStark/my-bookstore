@@ -2,9 +2,25 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [username, setUsername] = useState("");
+  const [email, findEmail] = useState("");
+  const [password, findPassword] = useState("");
+  const [username, findUsername] = useState("");
+
+  const back_end_port = "http://localhost:5000"; // Create a variable for your back end port,
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(`${back_end_port}/auth/login`, {
+        email,
+        password,
+        username,
+      });
+    } catch (error) {
+      alert(error.message);
+    }
+  };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-center">

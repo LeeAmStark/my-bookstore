@@ -48,16 +48,17 @@ export default function Signup() {
       });
 
       // Most of the errors are already handled and logged in the backend, so this part of the code down to -
-      if (response.data.success) {                                                                    // |
-        setSuccess("Signup successful!");                                                             // |
-        alert("Your account has been created");                                                       // |
-      } else {                                                                                        // |
-        setError("Signup failed");                                                                    // |
-        alert("Please make sure all information is filled");                                          // |
-      }                                                                                               // |
+      if (response.data.success) {                                                                       // |
+        setSuccess("Signup successful!");                                                                // |
+        alert("Your account has been created");                                                          // |
+      } else {                                                                                           // |
+        setError("Signup failed");                                                                       // |
+        alert("Please make sure all information is filled");                                             // |
+      }                                                                                                  // |
                                                                                                       // here will always return true and execute only the if statement
     } catch (error) {
       setError("An error occurred during signup");
+      alert()
     }
   };
 
