@@ -1,21 +1,44 @@
+import React, { useState } from "react";
+import axios from "axios";
+
 export default function Login() {
+  const [email, findEmail] = useState("");
+  const [password, findPassword] = useState("");
+  const [username, findUsername] = useState("");
+
+  const back_end_port = "http://localhost:5000"; // Create a variable for your back end port,
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(`${back_end_port}/auth/login`, {
+        email,
+        password,
+        username,
+      });
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-center">
       <div className="bg-slate-300 w-96 p-8 text-center flex flex-col gap-8">
         <h2 className="text-3xl font-bold">LOGIN NOW</h2>
         <form action="POST" className="flex flex-col space-y-4 align-center">
           <input
-            type="email"
+            type="username"
             onChange={(e) => {
-              setEmail(email.target.value);
+              setUsername(e.target.value);
             }}
-            placeholder="Enter your e-mail"
+            placeholder="Enter your Username"
             className="p-2 border border-gray-300 rounded"
           />
           <input
             type="password"
             onChange={(e) => {
-              setPassword(email.target.value);
+              setPassword(e.target.value);
             }}
             placeholder="Enter your password"
             className="p-2 border border-gray-300 rounded"
