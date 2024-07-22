@@ -17,6 +17,10 @@ export default function Login() {
         password,
         username,
       });
+
+      if(response.data.success) {
+        alert("You're about to be redirected in...")
+      }
     } catch (error) {
       alert(error.message);
     }
