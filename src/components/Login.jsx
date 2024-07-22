@@ -30,7 +30,7 @@ export default function Login() {
     <div className="flex items-center justify-center min-h-screen bg-center">
       <div className="bg-slate-300 w-96 p-8 text-center flex flex-col gap-8">
         <h2 className="text-3xl font-bold">LOGIN NOW</h2>
-        <form action="POST" className="flex flex-col space-y-4 align-center">
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 align-center">
           <input
             type="username"
             onChange={(e) => {
@@ -50,7 +50,6 @@ export default function Login() {
           <button
             className="bg-purple-700 w-24 h-10 rounded content-center"
             type="submit"
-            onClick={submit}
           >
             Login Now
           </button>
