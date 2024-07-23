@@ -1,3 +1,4 @@
+import Header from "./shared/Header";
 import book_img from "./images/books.jpg";
 
 import AH_img from "./images/audible/AH_JC.jpg";
@@ -16,6 +17,7 @@ import UPP_img from "./images/audible/UPP_CT.jpg";
 export default function Shop() {
   return (
     <>
+      <Header />;
       <div className="w-full flex justify-center items-center flex-col">
         <div
           className="flex w-3/4 h-[350px] bg-center bg-cover rounded-2xl mt-[75px] items-center"
@@ -52,7 +54,6 @@ export default function Shop() {
           </button>
         </div>
       </div>
-
       <div className="flex justify-center mt-8">
         <div className="flex-col space-y-2 text-center">
           <h2 className="font-bold text-4xl ">
@@ -64,7 +65,6 @@ export default function Shop() {
           </p>
         </div>
       </div>
-
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div className="flex flex-col items-center bg-white p-2 rounded-lg shadow-md">
@@ -222,13 +222,16 @@ export default function Shop() {
           </div>
         </div>
       </div>
-
       <div className="w-full flex flex-col">
         <div className="flex p-4 space-x-96 border shadow-md rounded-xl items-center w-full max-w-4xl h-[200px] m-auto">
           <div className="flex flex-col gap-1 w-3/12">
             <h2 className="text-2xl font-bold text-indigo-600">Bookly.</h2>
-            <h2 className="">Deals made easy all year long. Free Shipping. Best Prices</h2>
-            <button className="w-1/2 bg-red-500 rounded text-white py-1">Find More</button>
+            <h2 className="">
+              Deals made easy all year long. Free Shipping. Best Prices
+            </h2>
+            <button className="w-1/2 bg-red-500 rounded text-white py-1">
+              Find More
+            </button>
           </div>
 
           <div className="flex">
@@ -250,6 +253,7 @@ export default function Shop() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

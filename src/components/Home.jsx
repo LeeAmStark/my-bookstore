@@ -19,6 +19,7 @@ import NS_img from "./images/books-img/nightshade.jpg";
 export default function Home() {
   return (
     <>
+      <Header />
       console.log(Location.state.id)
       <div
         className="flex items-center justify-center w-vw h-[500px] bg-center bg-cover"
@@ -137,6 +138,7 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

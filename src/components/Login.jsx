@@ -18,13 +18,13 @@ export default function Login() {
         username,
       });
     } catch (error) {
-      alert(error.message);
+      alert(error.response.data.msg);
     }
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-center">
-      <div className="bg-slate-300 w-96 p-8 text-center flex flex-col gap-8">
+      <div className="bg-slate-300 w-96 p-8 text-center flex flex-col gap-8 shadow-xl rounded-lg">
         <h2 className="text-3xl font-bold">LOGIN NOW</h2>
         <form action="POST" className="flex flex-col space-y-4 align-center">
           <input
@@ -32,8 +32,8 @@ export default function Login() {
             onChange={(e) => {
               setUsername(e.target.value);
             }}
-            placeholder="Enter your Username"
-            className="p-2 border border-gray-300 rounded"
+            placeholder="Enter your username"
+            className="p-2 border border-gray-300 rounded-md text-base"
           />
           <input
             type="password"
@@ -41,12 +41,11 @@ export default function Login() {
               setPassword(e.target.value);
             }}
             placeholder="Enter your password"
-            className="p-2 border border-gray-300 rounded"
+            className="p-2 border border-gray-300 rounded-md"
           />
           <button
             className="bg-purple-700 w-24 h-10 rounded content-center"
             type="submit"
-            onClick={submit}
           >
             Login Now
           </button>
