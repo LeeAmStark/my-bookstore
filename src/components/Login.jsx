@@ -17,6 +17,10 @@ export default function Login() {
         password,
         username,
       });
+
+      if(response.data.success) {
+        alert("You're about to be redirected in...")
+      }
     } catch (error) {
       alert(error.response.data.msg);
     }
@@ -26,7 +30,7 @@ export default function Login() {
     <div className="flex items-center justify-center min-h-screen bg-center">
       <div className="bg-slate-300 w-96 p-8 text-center flex flex-col gap-8 shadow-xl rounded-lg">
         <h2 className="text-3xl font-bold">LOGIN NOW</h2>
-        <form action="POST" className="flex flex-col space-y-4 align-center">
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 align-center">
           <input
             type="username"
             onChange={(e) => {
