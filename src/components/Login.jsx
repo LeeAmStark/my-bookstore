@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Login() {
@@ -14,18 +14,20 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${back_end_port}/auth/login`, {
+      const response = await axios.get(`${back_end_port}/auth/login`, {
         email,
         password,
         username,
       });
 
       if (response.data.success) {
-        alert("You're about to be redirected in...");
-        
+        // setTimeout(navigate("/home"),  logTimer = 10000);
+        alert(`You'll be logged in`);
+        console.log(response.data);
       }
     } catch (error) {
-      console.log(error.response.data);
+      console.log(error)
+      alert(error);
     }
   };
 
