@@ -3,31 +3,32 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Login() {
-  const [email, findEmail] = useState("");
-  const [password, findPassword] = useState("");
-  const [username, findUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
-  const back_end_port = "http://localhost:5000"; // Create a variable for your back end port,
+  const back_end_port = "http://localhost:5000"; // Backend URL
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.get(`${back_end_port}/auth/login`, {
+      const response = await axios.post(`${back_end_port}/auth/login`, {
         email,
         password,
         username,
       });
 
       if (response.data.success) {
-        // setTimeout(navigate("/home"),  logTimer = 10000);
-        alert(`You'll be logged in`);
-        console.log(response.data);
+        alert("You'll be logged in");
+        navigate("/");
+      } else {
+        alert(response.data); // Show error message
       }
     } catch (error) {
-      console.log(error)
-      alert(error);
+      console.log(error.response.data);
+      alert(error.response.data); // Display error message from backend
     }
   };
 
@@ -41,25 +42,22 @@ export default function Login() {
         >
           <input
             type="email"
-            onChange={(e) => {
-              findEmail(e.target.value);
-            }}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
             className="p-2 border border-gray-300 rounded-md text-base"
           />
           <input
-            type="username"
-            onChange={(e) => {
-              findUsername(e.target.value);
-            }}
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             placeholder="Enter your username"
             className="p-2 border border-gray-300 rounded-md text-base"
           />
           <input
             type="password"
-            onChange={(e) => {
-              findPassword(e.target.value);
-            }}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter your password"
             className="p-2 border border-gray-300 rounded-md"
           />

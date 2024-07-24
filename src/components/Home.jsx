@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "./shared/Header";
+import Footer from "./shared/Footer";
 import Cart from "./shared/Cart";
 
 //Images
@@ -20,7 +21,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      console.log(Location.state.id)
       <div
         className="flex items-center justify-center w-vw h-[500px] bg-center bg-cover"
         style={{ backgroundImage: `url(${homeBG})` }}
