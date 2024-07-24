@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 export default function Login() {
   const [email, findEmail] = useState("");
   const [password, findPassword] = useState("");
   const [username, findUsername] = useState("");
+  const navigate = useNavigate();
 
   const back_end_port = "http://localhost:5000"; // Create a variable for your back end port,
 
@@ -18,11 +20,12 @@ export default function Login() {
         username,
       });
 
-      if(response.data.success) {
-        alert("You're about to be redirected in...")
+      if (response.data.success) {
+        alert("You're about to be redirected in...");
+        
       }
     } catch (error) {
-      alert(error.response.data.msg);
+      console.log(error.response.data);
     }
   };
 
@@ -30,11 +33,22 @@ export default function Login() {
     <div className="flex items-center justify-center min-h-screen bg-center">
       <div className="bg-slate-300 w-96 p-8 text-center flex flex-col gap-8 shadow-xl rounded-lg">
         <h2 className="text-3xl font-bold">LOGIN NOW</h2>
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 align-center">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col space-y-4 align-center"
+        >
+          <input
+            type="email"
+            onChange={(e) => {
+              findEmail(e.target.value);
+            }}
+            placeholder="Enter your email"
+            className="p-2 border border-gray-300 rounded-md text-base"
+          />
           <input
             type="username"
             onChange={(e) => {
-              setUsername(e.target.value);
+              findUsername(e.target.value);
             }}
             placeholder="Enter your username"
             className="p-2 border border-gray-300 rounded-md text-base"
@@ -42,7 +56,7 @@ export default function Login() {
           <input
             type="password"
             onChange={(e) => {
-              setPassword(e.target.value);
+              findPassword(e.target.value);
             }}
             placeholder="Enter your password"
             className="p-2 border border-gray-300 rounded-md"

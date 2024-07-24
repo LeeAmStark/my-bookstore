@@ -57,6 +57,7 @@ export default function Signup() {
         setEmail("");
         setUsername("");
         setPassword("");
+        setConfirmPassword("");
       } else {
         // |
         setError("Signup failed"); // |
@@ -117,7 +118,7 @@ export default function Signup() {
           />
           <input
             required
-            value={password}
+            value={confirmPassword}
             type="password"
             placeholder="Confirm your password"
             className="p-2 border border-gray-300 rounded-lg"
