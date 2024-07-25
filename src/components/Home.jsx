@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import Cart from "./shared/Cart";
-import protectData from "../protectData";
+import dataProtect from "../ProtectData";
 
 //Images
 //Misc Image
@@ -17,17 +18,19 @@ import RG_img from "./images/books-img/radical_gardening.jpg";
 import S_img from "./images/books-img/shattered.jpg";
 import TGIS_img from "./images/books-img/the_girl_of_ink_and_stars.jpg";
 import NS_img from "./images/books-img/nightshade.jpg";
+import { Navigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate()
   useEffect(() => {
-    protectData();
-  });
+    dataProtect(navigate);
+  }, [navigate]);
 
   return (
     <>
       <Header />
       <div
-        className="flex items-center justify-center w-vw h-[500px] bg-center bg-cover"
+        className="flex items-center justify-center h-[500px] bg-center bg-cover"
         style={{ backgroundImage: `url(${homeBG})` }}
       >
         <div className="flex-col space-y-8 gap-28 self-center text-center text-white w-1/2">

@@ -25,7 +25,7 @@ export default function Login() {
 
         // Store JWT in local storage
         localStorage.setItem('jwt', token);
-
+        alert(token)
         alert("You'll be logged in");
         navigate("/");
       } else {

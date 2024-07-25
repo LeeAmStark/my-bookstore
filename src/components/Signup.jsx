@@ -18,7 +18,6 @@ export default function Signup() {
   // it's not really needed by the way since the webpage is not published on the internet yet, as I've learned
 
   // NOTE: Both our NodeJS and our React App don't need to be running on the same server as long as we reference it here I guess
-
   const handleSubmit = async (e) => {
     // This function handleSubmit is used when we submit form, as a form should have a submit button,
     // when that button is clicked, it calls the onSubmit, which calls the function we pass into it
