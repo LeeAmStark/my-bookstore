@@ -21,6 +21,11 @@ export default function Login() {
       });
 
       if (response.data.success) {
+        const { token } = response.data;
+
+        // Store JWT in local storage
+        localStorage.setItem('jwt', token);
+
         alert("You'll be logged in");
         navigate("/");
       } else {

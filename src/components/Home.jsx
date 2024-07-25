@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import Cart from "./shared/Cart";
+import protectData from "../protectData";
 
 //Images
 //Misc Image
@@ -18,6 +19,10 @@ import TGIS_img from "./images/books-img/the_girl_of_ink_and_stars.jpg";
 import NS_img from "./images/books-img/nightshade.jpg";
 
 export default function Home() {
+  useEffect(() => {
+    protectData();
+  });
+
   return (
     <>
       <Header />
